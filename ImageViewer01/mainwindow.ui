@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>689</width>
+    <height>421</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QGraphicsView" name="graphicsView"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>689</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOpen"/>
+    <addaction name="actionReset"/>
+    <addaction name="separator"/>
+    <addaction name="actionLast"/>
+    <addaction name="actionNext"/>
+    <addaction name="separator"/>
+    <addaction name="actionSave"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionRgb2Gray"/>
+    <addaction name="actionReversal"/>
+    <addaction name="actionLogTrans"/>
+    <addaction name="actionGray_HistEq"/>
+    <addaction name="actionColor_HistEq01"/>
+    <addaction name="actionColor_HistEq02"/>
+    <addaction name="separator"/>
+    <addaction name="actionBasic_Transformation"/>
+   </widget>
+   <widget class="QMenu" name="menuFilters">
+    <property name="title">
+     <string>Spatial Filters</string>
+    </property>
+    <addaction name="actionSettings"/>
+    <addaction name="separator"/>
+    <addaction name="actionLinear"/>
+    <addaction name="actionGauss_Blur"/>
+    <addaction name="actionBilateral_Filter"/>
+    <addaction name="actionMedian_Filter"/>
+    <addaction name="actionExpansion"/>
+    <addaction name="actionCorrosion"/>
+   </widget>
+   <widget class="QMenu" name="menuSpectrum_Filters">
+    <property name="title">
+     <string>Spectrum Filters</string>
+    </property>
+    <addaction name="actionSpectrum_Analysis"/>
+    <addaction name="actionGaussFrequency_filtering"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuFilters"/>
+   <addaction name="menuSpectrum_Filters"/>
+  </widget>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionReset">
+   <property name="text">
+    <string>Reset</string>
+   </property>
+  </action>
+  <action name="actionLast">
+   <property name="text">
+    <string>Last Picture</string>
+   </property>
+   <property name="toolTip">
+    <string>上一张</string>
+   </property>
+  </action>
+  <action name="actionNext">
+   <property name="text">
+    <string>Next Picture</string>
+   </property>
+   <property name="toolTip">
+    <string>下一张</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionRgb2Gray">
+   <property name="text">
+    <string>Rgb2Gray</string>
+   </property>
+  </action>
+  <action name="actionReversal">
+   <property name="text">
+    <string>Reversal</string>
+   </property>
+  </action>
+  <action name="actionLogTrans">
+   <property name="text">
+    <string>LogTrans</string>
+   </property>
+  </action>
+  <action name="actionGray_HistEq">
+   <property name="text">
+    <string>Gray-HistEq</string>
+   </property>
+  </action>
+  <action name="actionColor_HistEq01">
+   <property name="text">
+    <string>Color-HistEq01</string>
+   </property>
+  </action>
+  <action name="actionColor_HistEq02">
+   <property name="text">
+    <string>Color-HistEq02</string>
+   </property>
+  </action>
+  <action name="actionSettings">
+   <property name="text">
+    <string>Settings</string>
+   </property>
+  </action>
+  <action name="actionLinear">
+   <property name="text">
+    <string>Linear</string>
+   </property>
+  </action>
+  <action name="actionGauss_Blur">
+   <property name="text">
+    <string>Gauss Blur</string>
+   </property>
+  </action>
+  <action name="actionBilateral_Filter">
+   <property name="text">
+    <string>Bilateral Filter</string>
+   </property>
+  </action>
+  <action name="actionMedian_Filter">
+   <property name="text">
+    <string>Median Filter</string>
+   </property>
+  </action>
+  <action name="actionExpansion">
+   <property name="text">
+    <string>Expansion</string>
+   </property>
+  </action>
+  <action name="actionCorrosion">
+   <property name="text">
+    <string>Corrosion</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionBasic_Transformation">
+   <property name="text">
+    <string>Basic Transformation</string>
+   </property>
+  </action>
+  <action name="actionSpectrum_Analysis">
+   <property name="text">
+    <string>Spectrum Analysis</string>
+   </property>
+  </action>
+  <action name="actionGaussFrequency_filtering">
+   <property name="text">
+    <string>GaussFrequency filtering</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
